@@ -516,103 +516,186 @@ Innovation, reliability, and growth are at the heart of everything we do.</p>
             </div>
         </div>
     </div>
-    <!-- End Service section -->
-    <!-- Start Work section -
-    <div class="home4-work-section sec-mar">
-        <div class="container">
-            <div class="row wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                <div class="col-lg-12 mb-55 d-flex align-items-center justify-content-between flex-wrap gap-3">
-                    <div class="section-title-4 three">
-                        <span>Examples of Our Work</span>
-                        <h2>Every <span>great design</span> begins with a great story.</h2>
-                    </div>
-                    <div class="view-btn">
-                        <a class="primary-btn3" href="project.html">View All WORK</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-5 col-sm-6 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                    <div class="single-work magnetic-item">
-                        <div class="work-img">
-                            <img class="img-fluid" src="assets/img/home-4/work-01.png" alt="">
-                        </div>
-                        <div class="work-content">
-                            <h3><a href="project-details.html">Streamlining IT Infrastructure</a></h3>
-                            <span>Web development</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7 col-sm-6 wow animate fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                    <div class="single-work magnetic-item">
-                        <div class="work-img">
-                            <img class="img-fluid" src="assets/img/home-4/work-02.png" alt="">
-                        </div>
-                        <div class="work-content">
-                            <h3><a href="project-details.html">Transforming Customer Experience</a></h3>
-                            <span>Web development</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-sm-6 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                    <div class="single-work magnetic-item">
-                        <div class="work-img">
-                            <img class="img-fluid" src="assets/img/home-4/work-03.png" alt="">
-                        </div>
-                        <div class="work-content">
-                            <h3><a href="project-details.html">Scaling Agile Development</a></h3>
-                            <span>Web development</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-sm-6 wow animate fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                    <div class="single-work magnetic-item">
-                        <div class="work-img">
-                            <img class="img-fluid" src="assets/img/home-4/work-04.png" alt="">
-                        </div>
-                        <div class="work-content">
-                            <h3><a href="project-details.html">Optimizing IT Operations</a></h3>
-                            <span>Web development</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                    <div class="single-work magnetic-item">
-                        <div class="work-img">
-                            <img class="img-fluid" src="assets/img/home-4/work-05.png" alt="">
-                        </div>
-                        <div class="work-content">
-                            <h3><a href="project-details.html">Maximizing Efficiency with DevOps</a></h3>
-                            <span>Web development</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 wow animate fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                    <div class="single-work magnetic-item">
-                        <div class="work-img">
-                            <img class="img-fluid" src="assets/img/home-4/work-06.png" alt="">
-                        </div>
-                        <div class="work-content">
-                            <h3><a href="project-details.html">Implementing Robotic Process Automation</a></h3>
-                            <span>Web development</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 wow animate fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-                    <div class="single-work magnetic-item">
-                        <div class="work-img">
-                            <img class="img-fluid" src="assets/img/home-4/work-07.png" alt="">
-                        </div>
-                        <div class="work-content">
-                            <h3><a href="project-details.html">Scaling Agile Development</a></h3>
-                            <span>Web development</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- End Service section 
+   <!-- Portfolio Section with internal CSS -->
+<section class="portfolio-section">
+  <style>
+    .portfolio-section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .portfolio-section h2 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .portfolio-section p {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #b0d0ff;
+      margin-bottom: 40px;
+    }
+
+    .portfolio-section p span {
+      color: #00ffff;
+      font-weight: 600;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .portfolio-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .portfolio-item:hover img {
+      transform: scale(1.08);
+    }
+
+    .portfolio-item:hover {
+      box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff44;
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.65);
+      width: 100%;
+      padding: 20px;
+      color: #ffffff;
+    }
+
+    .overlay h3 {
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+      color: #00ffff;
+    }
+
+    .overlay p {
+      font-size: 0.9rem;
+      color: #e0e0e0;
+    }
+
+    @media (max-width: 768px) {
+      .portfolio-section h2 {
+        font-size: 2rem;
+      }
+
+      .portfolio-section p {
+        font-size: 1rem;
+      }
+
+      .overlay h3 {
+        font-size: 1rem;
+      }
+
+      .overlay p {
+        font-size: 0.8rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .portfolio-section {
+        padding: 30px 15px;
+      }
+
+      .portfolio-item img {
+        height: 180px;
+      }
+    }
+  </style>
+
+  <div class="container">
+    <h2>Examples of Our Work</h2>
+    <p>Every <span>great design</span> begins with a great story.</p>
+
+    <div class="portfolio-grid">
+      <a class="portfolio-item" href="https://www.jbmtimber.com.au/" target="_blank">
+        <img src="/assets/img/1.png" alt="JBM Timber" />
+        <div class="overlay">
+          <h3>JBM Timber</h3>
+          <p>Construction Website</p>
         </div>
+      </a>
+
+      <a class="portfolio-item" href="https://www.mrlumberjack.com.au/" target="_blank">
+        <img src="/assets/img/2.png" alt="Mr. Lumberjack" />
+        <div class="overlay">
+          <h3>Mr. Lumberjack</h3>
+          <p>Furniture E-Commerce</p>
+        </div>
+      </a>
+
+      <a class="portfolio-item" href="https://supportnetwork.com.au/" target="_blank">
+        <img src="/assets/img/3.png" alt="Support Network" />
+        <div class="overlay">
+          <h3>Support Network</h3>
+          <p>Disability Support</p>
+        </div>
+      </a>
+
+      <a class="portfolio-item" href="https://www.nursenextdoor.com.au/" target="_blank">
+        <img src="/assets/img/4.png" alt="Nurse Next Door" />
+        <div class="overlay">
+          <h3>Nurse Next Door</h3>
+          <p>Home Healthcare</p>
+        </div>
+      </a>
+
+      <a class="portfolio-item" href="https://www.plumbmedic.com.au/" target="_blank">
+        <img src="/assets/img/5.png" alt="Plumb Medic" />
+        <div class="overlay">
+          <h3>Plumb Medic</h3>
+          <p>Plumbing Services</p>
+        </div>
+      </a>
+
+      <a class="portfolio-item" href="https://www.osheaplumbing.com.au/" target="_blank">
+        <img src="/assets/img/6.png" alt="O'Shea Plumbing" />
+        <div class="overlay">
+          <h3>O'Shea Plumbing</h3>
+          <p>Service Website</p>
+        </div>
+      </a>
+
+      <a class="portfolio-item" href="https://www.lockslash.com.au/" target="_blank">
+        <img src="/assets/img/7.png" alt="Lockslash" />
+        <div class="overlay">
+          <h3>Lockslash</h3>
+          <p>Beauty Brand</p>
+        </div>
+      </a>
+
+      <a class="portfolio-item" href="https://www.caseycollegeofbeauty.vic.edu.au/" target="_blank">
+        <img src="/assets/img/8.png" alt="Casey College of Beauty" />
+        <div class="overlay">
+          <h3>Casey College of Beauty</h3>
+          <p>Educational Website</p>
+        </div>
+      </a>
     </div>
-    <!-- End Work section -->
+  </div>
+</section>
 
     <!-- Start Feature section -->
     <div class="home4-feature-area">
